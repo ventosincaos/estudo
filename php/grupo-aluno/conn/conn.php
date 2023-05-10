@@ -1,6 +1,7 @@
 <?php
 try {
-$PDO = new PDO("mysql:dbname=agenda;host=localhost:3307","root","");
+    #cria conexão com o bd e armazena as configurações
+$PDO = new PDO("mysql:dbname=aluno;host=localhost:3306","root","Rosa0107@Diaz");
 //echo 'conexão ok <br>';
 }
 catch (PDOException $e) {
@@ -9,4 +10,3 @@ catch (PDOException $e) {
 catch (Exception $e) {
     echo "error generico" . $e->getMessage();;
 }
-?>

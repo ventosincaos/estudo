@@ -1,0 +1,26 @@
+CREATE SCHEMA `aluno` DEFAULT CHARACTER SET utf8 ;
+USE aluno;
+
+CREATE TABLE aluno (
+  `id` int UNSIGNED NOT NULL UNIQUE COMMENT 'chave primária',
+  `nome` varchar(255) NOT NULL COMMENT 'nome',
+  `cpf` varchar(14) UNIQUE NOT NULL COMMENT 'cpf',
+  `dt_nasc` date NOT NULL COMMENT 'Data de nascimento',
+  `endereco` varchar(255) NOT NULL COMMENT 'endereço',
+  `semestre` int NOT NULL COMMENT 'Semestre que esta cursando',
+  `dt_inicio` date NOT NULL COMMENT 'Data de inicio do curso',
+  `curso` varchar(255) NOT NULL COMMENT 'curso',
+  PRIMARY KEY (id))
+  ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE aluno
+modify id int unsigned not null 
+auto_increment comment 'chave primária', auto_increment = 001; 
+commit;
+
+INSERT INTO aluno (nome, cpf, dt_nasc, endereco, semestre, dt_inicio, curso) VALUES
+('Ana Alves', '12300045678', '2001-01-11', 'Rua 12', '1', '2023-01-11', 'análise e desenvolvimento de sistemas'),
+('Bruno Bolacchi', '45600078912', '2002-02-22', 'Rua 13', '2', '2022-06-12', 'ciência de dados'),
+('Cris Campos', '78900012345', '2003-03-13', 'Rua 14', '3', '2022-01-11', 'gestão de tecnologia da informação');
+
+agenda
