@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Indice do site</title>
+
+	<style>
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: rgba(226, 226, 226, 0.555);
+            margin-top: 50px;
+		}
+
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+        ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        }
+
+        li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        a:hover {
+            background-color: #333;
+        }
+
+        .dados {
+            padding: 10px;
+            background-color: #EEE;
+            text-align: center;
+            background-color: #FFF;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 500px;
+			margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #download {
+            display: block;
+            margin: 0 auto;
+            background-color: #4a72c9;
+            color: #FFF;
+            border-radius: 5px;
+        }
+
+        .link-centro {
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+        <body>
+            <div class="dados">
+            <h1>Índice do Site</h1>
+            <ul>
+                <li><a href="formulario_de_matricula.html">Formulario de Matrícula</a></li>
+                <li><a href="leitura_dos_dados.php">Leitura dos Dados</a></li>
+            </ul>
+            </div>
+
+            <div class="dados">
+                <h2>Download</h2>
+                <p>Clique no botão abaixo para baixar o arquivo <strong>"dados_do_formulario.json"</strong></p>
+                <a id="download" href="dados_do_formulario.json" download class="link-centro">download</a>
+            </div>
+
+        </body>
+
+</html>
+
+
+
+
